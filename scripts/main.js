@@ -4,25 +4,16 @@ import { GovernorOptions } from "./Governors.js";
 // import { WheelOptions } from "./wheelOptions.js";
 // import { OrderButton } from "./OrderButton.js";
 
-
-
-
 const container = document.querySelector("#container");
 
-
-
-
 const render = async () => {
-    const governorHTML = await GovernorOptions();
-    // const facilityHTML = await facilityOptions();
-    // const technologyHTML = await TechOptions();
-    // const wheelHTML = await WheelOptions();
-    // const buttonHTML = await OrderButton();
+  const governorHTML = await GovernorOptions();
+  // const facilityHTML = await facilityOptions();
+  // const technologyHTML = await TechOptions();
+  // const wheelHTML = await WheelOptions();
+  // const buttonHTML = await OrderButton();
 
-
-
-
-    const composedHTML = `
+  const composedHTML = `
         <h1>Solar System Mining Marketplace</h1>
 
 
@@ -72,13 +63,9 @@ const render = async () => {
         </article>
     `;
 
-
-
-
-    container.innerHTML = composedHTML;
+  container.innerHTML = composedHTML;
 };
 
-
-document.addEventListener("newOrderCreated", render())
+// document.addEventListener("newOrderCreated", render())
 
 render();

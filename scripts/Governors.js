@@ -1,12 +1,12 @@
-import { setGovernor } from "./TransientState.js";
+//import { setGovernor } from "./TransientState.js";
 
-const handleGovernorSelection = (changeEvent) => {
-  if (changeEvent.target.id === "governor") {
-    setGovernor(changeEvent.target.value);
-  }
-};
+// const handleGovernorSelection = (changeEvent) => {
+//   if (changeEvent.target.id === "governor") {
+//     setGovernor(changeEvent.target.value);
+//   }
+// };
 
-document.addEventListener("change", handleGovernorSelection);
+// document.addEventListener("change", handleGovernorSelection);
 
 export const GovernorOptions = async () => {
   const response = await fetch("http://localhost:8088/governors");
@@ -15,7 +15,6 @@ export const GovernorOptions = async () => {
   const governorHTML = `
         <select id="governor">
             <option value="0">Choose a Governor</option>
-            <option value="">--------</option>
             ${governors
               .map((governor) => {
                 return `<option value="${governor.id}">${governor.name} </option>`;
