@@ -1,4 +1,161 @@
 {
-    "minerals":[],
-    "facilityMinerals": []
+  "colonies": [
+    {
+      "id": 1,
+      "name": "Earth Colony Alpha",
+      "max_gov": 5
+    },
+    {
+      "id": 2,
+      "name": "Mars Mining Base",
+      "max_gov": 3
+    },
+    {
+      "id": 3,
+      "name": "Europa Research Station",
+      "max_gov": 2
+    },
+    {
+      "id": 4,
+      "name": "Titan Industrial Complex",
+      "max_gov": 4
+    },
+    {
+      "id": 5,
+      "name": "Ganymede Terraform Outpost",
+      "max_gov": 2
+    },
+    {
+      "id": 6,
+      "name": "Callisto Biohabitat",
+      "max_gov": 3
+    }
+  ],
+  "governors": [
+    {
+      "id": 1,
+      "name": "Governor Sarah Martinez",
+      "is_active": true,
+      "colonyId": 1
+    },
+    { "id": 2, "name": "Governor Chen Wei", "is_active": true, "colonyId": 1 },
+    {
+      "id": 3,
+      "name": "Governor Maria Santos",
+      "is_active": false,
+      "colonyId": 1
+    },
+    {
+      "id": 4,
+      "name": "Governor James Thompson",
+      "is_active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 5,
+      "name": "Governor Elena Kowalski",
+      "is_active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 6,
+      "name": "Governor Alex Rivera",
+      "is_active": true,
+      "colonyId": 3
+    },
+    {
+      "id": 7,
+      "name": "Governor David Kim",
+      "is_active": false,
+      "colonyId": 3
+    },
+    {
+      "id": 8,
+      "name": "Governor Lisa Anderson",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 9,
+      "name": "Governor Marcus Johnson",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 10,
+      "name": "Governor Rachel Park",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 11,
+      "name": "Governor Talia Berenstein",
+      "is_active": true,
+      "colonyId": 5
+    },
+    {
+      "id": 12,
+      "name": "Governor Omar Hadid",
+      "is_active": false,
+      "colonyId": 5
+    },
+    {
+      "id": 13,
+      "name": "Governor Fiona Patel",
+      "is_active": true,
+      "colonyId": 6
+    }
+  ],
+  "facilities": [
+    { "id": 1, "name": "Asteroid Belt Mining Station 7", "is_active": true },
+    { "id": 2, "name": "Ceres Deep Core Facility", "is_active": true },
+    { "id": 3, "name": "Phobos Extraction Plant", "is_active": false },
+    { "id": 4, "name": "Luna Surface Mining Corp", "is_active": true },
+    { "id": 5, "name": "Io Volcanic Mining Station", "is_active": true },
+    { "id": 6, "name": "Helene Driftfield Refinery", "is_active": true },
+    { "id": 7, "name": "Themis Belt Operation", "is_active": false }
+  ],
+  "minerals": [
+    { "id": 1, "name": "Iron" },
+    { "id": 2, "name": "Magnesium" },
+    { "id": 3, "name": "Titanium" },
+    { "id": 4, "name": "Platinum" },
+    { "id": 5, "name": "Lithium" },
+    { "id": 6, "name": "Uranium" },
+    { "id": 7, "name": "Rare Earth Elements" }
+  ],
+  "fac_min_joint": [
+    { "facilityid": 1, "mineralid": 1, "current_amount": 150 },
+    { "facilityid": 1, "mineralid": 2, "current_amount": 85 },
+    { "facilityid": 2, "mineralid": 1, "current_amount": 200 },
+    { "facilityid": 2, "mineralid": 3, "current_amount": 45 },
+    { "facilityid": 2, "mineralid": 4, "current_amount": 12 },
+    { "facilityid": 4, "mineralid": 2, "current_amount": 120 },
+    { "facilityid": 4, "mineralid": 5, "current_amount": 30 },
+    { "facilityid": 5, "mineralid": 3, "current_amount": 75 },
+    { "facilityid": 5, "mineralid": 4, "current_amount": 18 },
+    { "facilityid": 3, "mineralid": 1, "current_amount": 0 },
+    { "facilityid": 6, "mineralid": 6, "current_amount": 65 },
+    { "facilityid": 6, "mineralid": 7, "current_amount": 22 },
+    { "facilityid": 7, "mineralid": 1, "current_amount": 95 },
+    { "facilityid": 7, "mineralid": 3, "current_amount": 33 }
+  ],
+  "colonyminerals": [
+    { "colonyid": 1, "mineralid": 1, "current_amount": 500 },
+    { "colonyid": 1, "mineralid": 2, "current_amount": 300 },
+    { "colonyid": 1, "mineralid": 3, "current_amount": 125 },
+    { "colonyid": 2, "mineralid": 1, "current_amount": 400 },
+    { "colonyid": 2, "mineralid": 3, "current_amount": 200 },
+    { "colonyid": 2, "mineralid": 5, "current_amount": 80 },
+    { "colonyid": 3, "mineralid": 2, "current_amount": 250 },
+    { "colonyid": 3, "mineralid": 4, "current_amount": 35 },
+    { "colonyid": 4, "mineralid": 1, "current_amount": 600 },
+    { "colonyid": 4, "mineralid": 3, "current_amount": 180 },
+    { "colonyid": 4, "mineralid": 4, "current_amount": 25 },
+    { "colonyid": 4, "mineralid": 5, "current_amount": 60 },
+    { "colonyid": 5, "mineralid": 6, "current_amount": 44 },
+    { "colonyid": 5, "mineralid": 2, "current_amount": 130 },
+    { "colonyid": 6, "mineralid": 7, "current_amount": 19 },
+    { "colonyid": 6, "mineralid": 3, "current_amount": 90 }
+  ]
 }
