@@ -34,74 +34,77 @@
   "governors": [
     {
       "id": 1,
-      "name": "Governor Sarah Martinez",
+      "name": "Sarah Martinez",
       "is_active": true,
       "colonyId": 1
     },
-    { "id": 2, "name": "Governor Chen Wei", "is_active": true, "colonyId": 1 },
+    { "id": 2,
+      "name": "Chen Wei",
+      "is_active": true, 
+      "colonyId": 1 },
     {
       "id": 3,
-      "name": "Governor Maria Santos",
+      "name": "Maria Santos",
       "is_active": false,
       "colonyId": 1
     },
     {
       "id": 4,
-      "name": "Governor James Thompson",
+      "name": "James Thompson",
       "is_active": true,
       "colonyId": 2
     },
     {
       "id": 5,
-      "name": "Governor Elena Kowalski",
+      "name": "Elena Kowalski",
       "is_active": true,
       "colonyId": 2
     },
     {
       "id": 6,
-      "name": "Governor Alex Rivera",
+      "name": "Alex Rivera",
       "is_active": true,
       "colonyId": 3
     },
     {
       "id": 7,
-      "name": "Governor David Kim",
+      "name": "David Kim",
       "is_active": false,
       "colonyId": 3
     },
     {
       "id": 8,
-      "name": "Governor Lisa Anderson",
+      "name": "Lisa Anderson",
       "is_active": true,
       "colonyId": 4
     },
     {
       "id": 9,
-      "name": "Governor Marcus Johnson",
+      "name": "Marcus Johnson",
       "is_active": true,
       "colonyId": 4
     },
     {
       "id": 10,
-      "name": "Governor Rachel Park",
+      "name": "Rachel Park",
       "is_active": true,
       "colonyId": 4
     },
     {
       "id": 11,
-      "name": "Governor Talia Berenstein",
+      "name": "Talia Berenstein",
       "is_active": true,
       "colonyId": 5
     },
     {
       "id": 12,
-      "name": "Governor Omar Hadid",
+      "name": "Omar Hadid",
       "is_active": false,
       "colonyId": 5
     },
     {
       "id": 13,
-      "name": "Governor Fiona Patel",
+      "name": "Fiona Patel",
       "is_active": true,
       "colonyId": 6
     }
