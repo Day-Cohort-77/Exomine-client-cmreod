@@ -38,10 +38,12 @@
       "is_active": true,
       "colonyId": 1
     },
-    { "id": 2,
+    {
+      "id": 2,
       "name": "Chen Wei",
-      "is_active": true, 
-      "colonyId": 1 },
+      "is_active": true,
+      "colonyId": 1
+    },
     {
       "id": 3,
       "name": "Maria Santos",
@@ -110,55 +112,246 @@
     }
   ],
   "facilities": [
-    { "id": 1, "name": "Asteroid Belt Mining Station 7", "is_active": true },
-    { "id": 2, "name": "Ceres Deep Core Facility", "is_active": true },
-    { "id": 3, "name": "Phobos Extraction Plant", "is_active": false },
-    { "id": 4, "name": "Luna Surface Mining Corp", "is_active": true },
-    { "id": 5, "name": "Io Volcanic Mining Station", "is_active": true },
-    { "id": 6, "name": "Helene Driftfield Refinery", "is_active": true },
-    { "id": 7, "name": "Themis Belt Operation", "is_active": false }
+    {
+      "id": 1,
+      "name": "Asteroid Belt Mining Station 7",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Ceres Deep Core Facility",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Phobos Extraction Plant",
+      "is_active": false
+    },
+    {
+      "id": 4,
+      "name": "Luna Surface Mining Corp",
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "name": "Io Volcanic Mining Station",
+      "is_active": true
+    },
+    {
+      "id": 6,
+      "name": "Helene Driftfield Refinery",
+      "is_active": true
+    },
+    {
+      "id": 7,
+      "name": "Themis Belt Operation",
+      "is_active": false
+    }
   ],
   "minerals": [
-    { "id": 1, "name": "Iron" },
-    { "id": 2, "name": "Magnesium" },
-    { "id": 3, "name": "Titanium" },
-    { "id": 4, "name": "Platinum" },
-    { "id": 5, "name": "Lithium" },
-    { "id": 6, "name": "Uranium" },
-    { "id": 7, "name": "Rare Earth Elements" }
+    {
+      "id": 1,
+      "name": "Iron"
+    },
+    {
+      "id": 2,
+      "name": "Magnesium"
+    },
+    {
+      "id": 3,
+      "name": "Titanium"
+    },
+    {
+      "id": 4,
+      "name": "Platinum"
+    },
+    {
+      "id": 5,
+      "name": "Lithium"
+    },
+    {
+      "id": 6,
+      "name": "Uranium"
+    },
+    {
+      "id": 7,
+      "name": "Rare Earth Elements"
+    }
   ],
   "fac_min_joint": [
-    { "facilityid": 1, "mineralid": 1, "current_amount": 150 },
-    { "facilityid": 1, "mineralid": 2, "current_amount": 85 },
-    { "facilityid": 2, "mineralid": 1, "current_amount": 200 },
-    { "facilityid": 2, "mineralid": 3, "current_amount": 45 },
-    { "facilityid": 2, "mineralid": 4, "current_amount": 12 },
-    { "facilityid": 4, "mineralid": 2, "current_amount": 120 },
-    { "facilityid": 4, "mineralid": 5, "current_amount": 30 },
-    { "facilityid": 5, "mineralid": 3, "current_amount": 75 },
-    { "facilityid": 5, "mineralid": 4, "current_amount": 18 },
-    { "facilityid": 3, "mineralid": 1, "current_amount": 0 },
-    { "facilityid": 6, "mineralid": 6, "current_amount": 65 },
-    { "facilityid": 6, "mineralid": 7, "current_amount": 22 },
-    { "facilityid": 7, "mineralid": 1, "current_amount": 95 },
-    { "facilityid": 7, "mineralid": 3, "current_amount": 33 }
+    {
+      "facilityid": 1,
+      "mineralid": 1,
+      "current_amount": 150
+    },
+    {
+      "facilityid": 1,
+      "mineralid": 2,
+      "current_amount": 85
+    },
+    {
+      "facilityid": 2,
+      "mineralid": 1,
+      "current_amount": 200
+    },
+    {
+      "facilityid": 2,
+      "mineralid": 3,
+      "current_amount": 45
+    },
+    {
+      "facilityid": 2,
+      "mineralid": 4,
+      "current_amount": 12
+    },
+    {
+      "facilityid": 4,
+      "mineralid": 2,
+      "current_amount": 120
+    },
+    {
+      "facilityid": 4,
+      "mineralid": 5,
+      "current_amount": 30
+    },
+    {
+      "facilityid": 5,
+      "mineralid": 3,
+      "current_amount": 75
+    },
+    {
+      "facilityid": 5,
+      "mineralid": 4,
+      "current_amount": 18
+    },
+    {
+      "facilityid": 3,
+      "mineralid": 1,
+      "current_amount": 0
+    },
+    {
+      "facilityid": 6,
+      "mineralid": 6,
+      "current_amount": 65
+    },
+    {
+      "facilityid": 6,
+      "mineralid": 7,
+      "current_amount": 22
+    },
+    {
+      "facilityid": 7,
+      "mineralid": 1,
+      "current_amount": 95
+    },
+    {
+      "facilityid": 7,
+      "mineralid": 3,
+      "current_amount": 33
+    }
   ],
-  "colonyminerals": [
-    { "colonyid": 1, "mineralid": 1, "current_amount": 500 },
-    { "colonyid": 1, "mineralid": 2, "current_amount": 300 },
-    { "colonyid": 1, "mineralid": 3, "current_amount": 125 },
-    { "colonyid": 2, "mineralid": 1, "current_amount": 400 },
-    { "colonyid": 2, "mineralid": 3, "current_amount": 200 },
-    { "colonyid": 2, "mineralid": 5, "current_amount": 80 },
-    { "colonyid": 3, "mineralid": 2, "current_amount": 250 },
-    { "colonyid": 3, "mineralid": 4, "current_amount": 35 },
-    { "colonyid": 4, "mineralid": 1, "current_amount": 600 },
-    { "colonyid": 4, "mineralid": 3, "current_amount": 180 },
-    { "colonyid": 4, "mineralid": 4, "current_amount": 25 },
-    { "colonyid": 4, "mineralid": 5, "current_amount": 60 },
-    { "colonyid": 5, "mineralid": 6, "current_amount": 44 },
-    { "colonyid": 5, "mineralid": 2, "current_amount": 130 },
-    { "colonyid": 6, "mineralid": 7, "current_amount": 19 },
-    { "colonyid": 6, "mineralid": 3, "current_amount": 90 }
+  "colonyMinerals": [
+    {
+      "id": 1,
+      "colonyId": 1,
+      "mineralId": 2,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "colonyId": 1,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "colonyId": 1,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "colonyId": 2,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "colonyId": 2,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 6,
+      "colonyId": 2,
+      "mineralId": 5,
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "colonyId": 3,
+      "mineralId": 2,
+      "quantity": 0
+    },
+    {
+      "id": 8,
+      "colonyId": 3,
+      "mineralId": 4,
+      "quantity": 0
+    },
+    {
+      "id": 9,
+      "colonyId": 4,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 10,
+      "colonyId": 4,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 11,
+      "colonyId": 4,
+      "mineralId": 4,
+      "quantity": 0
+    },
+    {
+      "id": 12,
+      "colonyId": 4,
+      "mineralId": 5,
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "colonyId": 5,
+      "mineralId": 6,
+      "quantity": 0
+    },
+    {
+      "id": 14,
+      "colonyId": 5,
+      "mineralId": 2,
+      "quantity":  0
+    },
+    {
+      "id": 15,
+      "colonyId": 6,
+      "mineralId": 7,
+      "quantity": 0
+    },
+    {
+      "id": 16,
+      "colonyId": 6,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 17,
+      "colonyId": 1,
+      "mineralId": 0,
+      "quantity": 0
+    }
   ]
 }

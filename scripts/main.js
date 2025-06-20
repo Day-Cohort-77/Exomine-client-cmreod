@@ -1,5 +1,5 @@
 import { GovernorOptions } from "./Governors.js";
-// import { PaintOptions } from "./paintOptions.js";
+//import { ColonyMineralList } from "./Colonies.js";
 // import { TechOptions } from "./techOptions.js";
 // import { WheelOptions } from "./wheelOptions.js";
 // import { OrderButton } from "./OrderButton.js";
@@ -8,7 +8,7 @@ const container = document.querySelector("#container");
 
 const render = async () => {
   const governorHTML = await GovernorOptions();
-  // const facilityHTML = await facilityOptions();
+  //const colonyHTML = await ColonyMineralList();
   // const technologyHTML = await TechOptions();
   // const wheelHTML = await WheelOptions();
   // const buttonHTML = await OrderButton();
@@ -30,7 +30,7 @@ const render = async () => {
 
             <section class="choices__facilities options">
                 <h2>Choose a facility</h2>
-                {facilityHTML}
+                {colonyHTML}
             </section>
 
 
@@ -66,6 +66,6 @@ const render = async () => {
   container.innerHTML = composedHTML;
 };
 
-// document.addEventListener("newOrderCreated", render())
+document.addEventListener("stateChange", render())
 
 render();
