@@ -1,5 +1,6 @@
 import { GovernorOptions } from "./Governors.js";
 //import { ColonyMineralList } from "./Colonies.js";
+import { FacilityOptions } from "./Facilities.js";
 // import { TechOptions } from "./techOptions.js";
 // import { WheelOptions } from "./wheelOptions.js";
 // import { OrderButton } from "./OrderButton.js";
@@ -8,6 +9,7 @@ const container = document.querySelector("#container");
 
 const render = async () => {
   const governorHTML = await GovernorOptions();
+  const facilitiesHTML = await FacilityOptions();
   //const colonyHTML = await ColonyMineralList();
   // const technologyHTML = await TechOptions();
   // const wheelHTML = await WheelOptions();
@@ -30,7 +32,7 @@ const render = async () => {
 
             <section class="choices__facilities options">
                 <h2>Choose a facility</h2>
-                {colonyHTML}
+                ${facilitiesHTML}
             </section>
 
 
