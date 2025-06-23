@@ -1,4 +1,370 @@
 {
-    "minerals":[],
-    "facilityMinerals": []
-}
+  "colonies": [
+    {
+      "id": 1,
+      "name": "Earth Colony Alpha",
+      "max_gov": 5
+    },
+    {
+      "id": 2,
+      "name": "Mars Mining Base",
+      "max_gov": 3
+    },
+    {
+      "id": 3,
+      "name": "Europa Research Station",
+      "max_gov": 2
+    },
+    {
+      "id": 4,
+      "name": "Titan Industrial Complex",
+      "max_gov": 4
+    },
+    {
+      "id": 5,
+      "name": "Ganymede Terraform Outpost",
+      "max_gov": 2
+    },
+    {
+      "id": 6,
+      "name": "Callisto Biohabitat",
+      "max_gov": 3
+    }
+  ],
+  "governors": [
+    {
+      "id": 1,
+      "name": "Sarah Martinez",
+      "is_active": true,
+      "colonyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Chen Wei",
+      "is_active": true,
+      "colonyId": 1
+    },
+    {
+      "id": 3,
+      "name": "Maria Santos",
+      "is_active": false,
+      "colonyId": 1
+    },
+    {
+      "id": 4,
+      "name": "James Thompson",
+      "is_active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 5,
+      "name": "Elena Kowalski",
+      "is_active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 6,
+      "name": "Alex Rivera",
+      "is_active": true,
+      "colonyId": 3
+    },
+    {
+      "id": 7,
+      "name": "David Kim",
+      "is_active": false,
+      "colonyId": 3
+    },
+    {
+      "id": 8,
+      "name": "Lisa Anderson",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 9,
+      "name": "Marcus Johnson",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 10,
+      "name": "Rachel Park",
+      "is_active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 11,
+      "name": "Talia Berenstein",
+      "is_active": true,
+      "colonyId": 5
+    },
+    {
+      "id": 12,
+      "name": "Omar Hadid",
+      "is_active": false,
+      "colonyId": 5
+    },
+    {
+      "id": 13,
+      "name": "Fiona Patel",
+      "is_active": true,
+      "colonyId": 6
+    }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "name": "Asteroid Belt Mining Station 7",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Ceres Deep Core Facility",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Phobos Extraction Plant",
+      "is_active": false
+    },
+    {
+      "id": 4,
+      "name": "Luna Surface Mining Corp",
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "name": "Io Volcanic Mining Station",
+      "is_active": true
+    },
+    {
+      "id": 6,
+      "name": "Helene Driftfield Refinery",
+      "is_active": true
+    },
+    {
+      "id": 7,
+      "name": "Themis Belt Operation",
+      "is_active": false
+    }
+  ],
+  "minerals": [
+    {
+      "id": 1,
+      "name": "Iron"
+    },
+    {
+      "id": 2,
+      "name": "Magnesium"
+    },
+    {
+      "id": 3,
+      "name": "Titanium"
+    },
+    {
+      "id": 4,
+      "name": "Platinum"
+    },
+    {
+      "id": 5,
+      "name": "Lithium"
+    },
+    {
+      "id": 6,
+      "name": "Uranium"
+    },
+    {
+      "id": 7,
+      "name": "Rare Earth Elements"
+    }
+  ],
+  "facilityMinerals": [
+    {
+      "id": 1,
+      "facilityId": 1,
+      "mineralId": 1,
+      "current_amount": 150
+    },
+    {
+      "id": 2,
+      "facilityId": 1,
+      "mineralId": 2,
+      "current_amount": 85
+    },
+    {
+      "id": 3,
+      "facilityId": 2,
+      "mineralId": 1,
+      "current_amount": 200
+    },
+    {
+      "id": 4,
+      "facilityId": 2,
+      "mineralId": 3,
+      "current_amount": 45
+    },
+    {
+      "id": 5,
+      "facilityId": 2,
+      "mineralId": 4,
+      "current_amount": 12
+    },
+    {
+      "id": 6,
+      "facilityId": 4,
+      "mineralId": 2,
+      "current_amount": 120
+    },
+    {
+      "id": 7,
+      "facilityId": 4,
+      "mineralId": 5,
+      "current_amount": 30
+    },
+    {
+      "id": 8,
+      "facilityId": 5,
+      "mineralId": 3,
+      "current_amount": 75
+    },
+    {
+      "id": 9,
+      "facilityId": 5,
+      "mineralId": 4,
+      "current_amount": 18
+    },
+    {
+      "id": 10,
+      "facilityId": 3,
+      "mineralId": 1,
+      "current_amount": 0
+    },
+    {
+      "id": 11,
+      "facilityId": 6,
+      "mineralId": 6,
+      "current_amount": 65
+    },
+    {
+      "id": 12,
+      "facilityId": 6,
+      "mineralId": 7,
+      "current_amount": 22
+    },
+    {
+      "id": 13,
+      "facilityId": 7,
+      "mineralId": 1,
+      "current_amount": 95
+    },
+    {
+      "id": 14,
+      "facilityId": 7,
+      "mineralId": 3,
+      "current_amount": 33
+    }
+  ],
+  "colonyMinerals": [
+    {
+      "id": 1,
+      "colonyId": 1,
+      "mineralId": 2,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "colonyId": 1,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "colonyId": 1,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "colonyId": 2,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "colonyId": 2,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 6,
+      "colonyId": 2,
+      "mineralId": 5,
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "colonyId": 3,
+      "mineralId": 2,
+      "quantity": 0
+    },
+    {
+      "id": 8,
+      "colonyId": 3,
+      "mineralId": 4,
+      "quantity": 0
+    },
+    {
+      "id": 9,
+      "colonyId": 4,
+      "mineralId": 1,
+      "quantity": 0
+    },
+    {
+      "id": 10,
+      "colonyId": 4,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 11,
+      "colonyId": 4,
+      "mineralId": 4,
+      "quantity": 0
+    },
+    {
+      "id": 12,
+      "colonyId": 4,
+      "mineralId": 5,
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "colonyId": 5,
+      "mineralId": 6,
+      "quantity": 0
+    },
+    {
+      "id": 14,
+      "colonyId": 5,
+      "mineralId": 2,
+      "quantity":  0
+    },
+    {
+      "id": 15,
+      "colonyId": 6,
+      "mineralId": 7,
+      "quantity": 0
+    },
+    {
+      "id": 16,
+      "colonyId": 6,
+      "mineralId": 3,
+      "quantity": 0
+    },
+    {
+      "id": 17,
+      "colonyId": 1,
+      "mineralId": 0,
+      "quantity": 0
+    }
+  ]}
