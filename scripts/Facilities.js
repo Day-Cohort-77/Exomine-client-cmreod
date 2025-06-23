@@ -1,11 +1,11 @@
 import { setFacility } from "./TransientState.js";
 
-const handleFacilitySelection = (changeEvent) => {
-  if (changeEvent.target.id === "facility") {
-    setFacility(changeEvent.target.value);
+const handleFacilitySelection = (steve) => {
+  if (steve.target.id === "facility") {
+    setFacility(steve.target.value);
   }
 }
-document.addEventListener("stateChange", handleFacilitySelection);
+document.addEventListener("change", handleFacilitySelection);
 
 export const FacilityOptions = async () => {
     const response = await fetch("http://localhost:8088/facilities");

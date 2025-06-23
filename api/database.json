@@ -178,75 +178,89 @@
       "name": "Rare Earth Elements"
     }
   ],
-  "fac_min_joint": [
+  "facilityMinerals": [
     {
-      "facilityid": 1,
-      "mineralid": 1,
+      "id": 1,
+      "facilityId": 1,
+      "mineralId": 1,
       "current_amount": 150
     },
     {
-      "facilityid": 1,
-      "mineralid": 2,
+      "id": 2,
+      "facilityId": 1,
+      "mineralId": 2,
       "current_amount": 85
     },
     {
-      "facilityid": 2,
-      "mineralid": 1,
+      "id": 3,
+      "facilityId": 2,
+      "mineralId": 1,
       "current_amount": 200
     },
     {
-      "facilityid": 2,
-      "mineralid": 3,
+      "id": 4,
+      "facilityId": 2,
+      "mineralId": 3,
       "current_amount": 45
     },
     {
-      "facilityid": 2,
-      "mineralid": 4,
+      "id": 5,
+      "facilityId": 2,
+      "mineralId": 4,
       "current_amount": 12
     },
     {
-      "facilityid": 4,
-      "mineralid": 2,
+      "id": 6,
+      "facilityId": 4,
+      "mineralId": 2,
       "current_amount": 120
     },
     {
-      "facilityid": 4,
-      "mineralid": 5,
+      "id": 7,
+      "facilityId": 4,
+      "mineralId": 5,
       "current_amount": 30
     },
     {
-      "facilityid": 5,
-      "mineralid": 3,
+      "id": 8,
+      "facilityId": 5,
+      "mineralId": 3,
       "current_amount": 75
     },
     {
-      "facilityid": 5,
-      "mineralid": 4,
+      "id": 9,
+      "facilityId": 5,
+      "mineralId": 4,
       "current_amount": 18
     },
     {
-      "facilityid": 3,
-      "mineralid": 1,
+      "id": 10,
+      "facilityId": 3,
+      "mineralId": 1,
       "current_amount": 0
     },
     {
-      "facilityid": 6,
-      "mineralid": 6,
+      "id": 11,
+      "facilityId": 6,
+      "mineralId": 6,
       "current_amount": 65
     },
     {
-      "facilityid": 6,
-      "mineralid": 7,
+      "id": 12,
+      "facilityId": 6,
+      "mineralId": 7,
       "current_amount": 22
     },
     {
-      "facilityid": 7,
-      "mineralid": 1,
+      "id": 13,
+      "facilityId": 7,
+      "mineralId": 1,
       "current_amount": 95
     },
     {
-      "facilityid": 7,
-      "mineralid": 3,
+      "id": 14,
+      "facilityId": 7,
+      "mineralId": 3,
       "current_amount": 33
     }
   ],
@@ -353,5 +367,4 @@
       "mineralId": 0,
       "quantity": 0
     }
-  ]
-}
+  ]}
