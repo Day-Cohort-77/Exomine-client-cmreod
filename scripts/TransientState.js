@@ -7,23 +7,28 @@ const transientState = {
 
 
 export const setGovernor = (GovernorId) => {
-    transientState.selectedGovernor = GovernorId
+    transientState.selectedGovernor = parseInt(GovernorId)
     document.dispatchEvent(new CustomEvent("stateChange"))
 }
 
 export const setFacility = (facilityId) => {
-    transientState.selectedFacility = facilityId
+    transientState.selectedFacility = parseInt(facilityId)
     document.dispatchEvent(new CustomEvent("stateChange"))
 }
 export const setMineral = (MineralId) => {
-    transientState.selectedMineral = MineralId
+    transientState.selectedMineral = parseInt(MineralId)
     document.dispatchEvent(new CustomEvent("stateChange"))
 }
 
 export const setColony = (colonyId) => {
-    transientState.selectedColony = colonyId
+    transientState.selectedColony = parseInt(colonyId)
     document.dispatchEvent(new CustomEvent("stateChange"))
 }
+
+export const getSelectedFacility = () => transientState.selectedFacility;
+export const getSelectedMineral = () => transientState.selectedMineral;
+export const getSelectedColony = () => transientState.selectedColony;
+
 
 export const addMineralToColony = async () => {
     const response = await fetch(`http://localhost:8088/colonyMinerals?colonyId=${transientState.selectedColony}&mineralId=${transientState.selectedMineral}`);

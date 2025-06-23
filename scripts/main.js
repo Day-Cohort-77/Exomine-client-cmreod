@@ -1,6 +1,6 @@
 import { GovernorOptions } from "./Governors.js";
-//import { ColonyMineralList } from "./Colonies.js";
 import { FacilityOptions } from "./Facilities.js";
+import { MineralOptions } from "./Minerals.js";
 // import { TechOptions } from "./techOptions.js";
 // import { WheelOptions } from "./wheelOptions.js";
 // import { OrderButton } from "./OrderButton.js";
@@ -10,7 +10,8 @@ const container = document.querySelector("#container");
 const render = async () => {
   const governorHTML = await GovernorOptions();
   const facilitiesHTML = await FacilityOptions();
-  //const colonyHTML = await ColonyMineralList();
+  const mineralHTML = await MineralOptions();
+  
   // const technologyHTML = await TechOptions();
   // const wheelHTML = await WheelOptions();
   // const buttonHTML = await OrderButton();
@@ -18,17 +19,11 @@ const render = async () => {
   const composedHTML = `
         <h1>Solar System Mining Marketplace</h1>
 
-
-
-
         <article class="choices">
             <section class="choices__governor options">
                 <h2>Choose a governor</h2>
                 ${governorHTML}
             </section>
-
-
-
 
             <section class="choices__facilities options">
                 <h2>Choose a facility</h2>
@@ -38,9 +33,9 @@ const render = async () => {
 
 
 
-            <section class="choices__technologies options">              
-            <h2>Technology Packages</h2>
-                {technologyHTML}
+            <section class="facility-minerals-options" id="minerals-section">  
+                <h2>Facility Minerals</h2>            
+                ${mineralHTML}
             </section>
 
 
@@ -68,6 +63,6 @@ const render = async () => {
   container.innerHTML = composedHTML;
 };
 
-document.addEventListener("stateChange", render())
+document.addEventListener("stateChange", render)
 
 render();
