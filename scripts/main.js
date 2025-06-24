@@ -1,22 +1,31 @@
 import { GovernorOptions } from "./Governors.js";
 import { FacilityOptions } from "./Facilities.js";
 import { MineralOptions } from "./Minerals.js";
-// import { TechOptions } from "./techOptions.js";
-// import { WheelOptions } from "./wheelOptions.js";
-// import { OrderButton } from "./OrderButton.js";
+import { ColonyDisplay } from "./Colonies.js";
+
+//IMPORT FUNCTIONS TO MAIN
 
 const container = document.querySelector("#container");
 
-const render = async () => {
-  const governorHTML = await GovernorOptions();
-  const facilitiesHTML = await FacilityOptions();
-  const mineralHTML = await MineralOptions();
-  
-  // const technologyHTML = await TechOptions();
-  // const wheelHTML = await WheelOptions();
-  // const buttonHTML = await OrderButton();
+//SEARCH FOR container id in index.html
 
-  const composedHTML = `
+
+
+/*
+    calling all functions that generate our HTML based on transientState selections
+    dynamically update the DOM using string interpolation
+
+
+*/
+
+const render = async () => {
+    const governorHTML = await GovernorOptions();
+    const facilitiesHTML = await FacilityOptions();
+    const mineralHTML = await MineralOptions();
+    const colonyHTML = await ColonyDisplay();
+
+
+    const composedHTML = `
         <h1>Solar System Mining Marketplace</h1>
 
         <article class="choices">
@@ -39,9 +48,8 @@ const render = async () => {
             </section>
 
 
-            <section class="choices__wheels options">
-                <h2>Wheel Options</h2>
-                {wheelHTML}
+            <section class="colony-list">
+                ${colonyHTML}
             </section>
         </article>
 
@@ -55,14 +63,20 @@ const render = async () => {
 
 
 
-        <article class="customOrders">
-            <h2>Custom Car Orders</h2>
-        </article>
     `;
 
-  container.innerHTML = composedHTML;
+    container.innerHTML = composedHTML;
 };
+
+
+//^^updates the container using innerHTML
+
+//add an event listener that listens for "stateChange" which we set up in previous modules. when transientState changes based on
+// selections, we trigger render function, to update the DOM
 
 document.addEventListener("stateChange", render)
 
+
+
+//INITIAL RENDER UPON LOADING DOM
 render();
